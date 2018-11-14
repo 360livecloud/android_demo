@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tool:context="com.qihoo.videocloud.recorder.RecorderActivityNewAPI">
+
+    <com.qihoo.livecloud.livekit.api.QHVCSurfaceView
+        android:id="@+id/surfaceView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <SurfaceView
+        android:id="@+id/surfaceViewOverlap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:background="@drawable/record_header_bg"
+        android:id="@+id/record_header_layout">
+
+        <ImageView
+            android:id="@+id/record_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/nav_back_selector"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="采集推流"
+            android:id="@+id/record_title"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/recordicon"
+                android:id="@+id/record_time"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="00:00:00" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textrecorder"
+        android:layout_width="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="9dp"
+        android:id="@+id/recorder_controler_layout">
+
+        <ImageView
+            android:id="@+id/new_api_mirror_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recorder_mirror"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/new_api_mute_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recorder_mute_enable"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/new_api_change_camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recorder_change_camera"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/new_api_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recorder_start"
+            android:layout_weight="1"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp" />
+
+        <ImageView
+            android:id="@+id/new_api_beauty_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recorder_beauty"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/new_api_faceU_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recorder_face_u"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/new_api_enable_camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recorder_camera_enable"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/record_message_layout"
+        android:layout_above="@+id/recorder_controler_layout"
+        android:id="@+id/record_message_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>

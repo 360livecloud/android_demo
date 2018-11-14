@@ -1,0 +1,174 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- 配置项 输入框样式 -->
+    <style name="edittext_config_input">
+        <item name="android:layout_width">128dp</item>
+        <item name="android:layout_height">31.3dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">6.6dp</item>
+        <item name="android:paddingRight">6.6dp</item>
+        <item name="android:background">@drawable/edittext_bg_selector</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 直播标题 选择selected样式 -->
+    <style name="textview_live_config_title_selected">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17.3sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 直播标题 选择normal样式 -->
+    <style name="textview_live_config_title_normal">
+        <item name="android:textColor">@color/color_99ffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- 配置项 输入框样式 -->
+    <style name="record_prepare_edittext">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">6.6dp</item>
+        <item name="android:paddingRight">6.6dp</item>
+        <item name="android:background">@drawable/edittext_bg_selector</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="switch_bg_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/switch_bg_color_selector</item>
+    </style>
+
+    <style name="switch_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="switch_toggle_style">
+        <item name="android:textOn">""</item>
+        <item name="android:textOff">""</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:thumbTextPadding">10dp</item>
+        <item name="android:switchMinWidth">25dp</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_track</item>
+    </style>
+
+    <style name="switch_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#99eeeeee</item>
+    </style>
+
+    <style name="switchStyle">
+        <item name="android:textOn">""</item>
+        <item name="android:textOff">""</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:thumbTextPadding">10dp</item>
+        <item name="android:switchMinWidth">25dp</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_track</item>
+    </style>
+
+    <style name="SettingActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/radioclore</item>
+    </style>
+
+    <style name="RecordActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/radioclore</item>
+    </style>
+
+    <!-- popupwindow-->
+    <style name="popupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/record_pop_window_anim_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/record_pop_window_anim_out_anim</item>
+    </style>
+
+    <style name="interactpopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/interact_pop_window_anim_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/interact_pop_window_anim_out_anim</item>
+    </style>
+
+    <style name="baseDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/dialog_style_bg</item>
+    </style>
+
+    <!-- dialogTitleStyle -->
+    <style name="dialog_title_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <string-array name="create_interact_room_max_num">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="interact_setting_room_broadcaster_profile">
+        <item>240P_3</item>
+        <item>240P_4</item>
+        <item>360P_3</item>
+        <item>360P_6</item>
+        <item>360P</item>
+        <item>360P_4</item>
+        <item>360P_9</item>
+        <item>480P_3</item>
+        <item>480P_6</item>
+        <item>480P_8</item>
+        <item>480P_9</item>
+        <item>720P</item>
+        <item>720P_3</item>
+    </string-array>
+</resources>

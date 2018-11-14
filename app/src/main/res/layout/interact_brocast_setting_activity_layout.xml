@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tool:context="com.qihoo.videocloud.recorder.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/header_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/interact_brocast_setting_header_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scaleType="center"
+            android:src="@drawable/nav_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99eeeeee"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="主播模式"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="该模式适用主播"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="分辨率"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_resolution_ratio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_360P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="360P"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_480P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="480P"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_640P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="640P"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_720P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="720P"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99eeeeee"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="编码方式"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_encode_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_H264"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="H.264"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_H265"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="H.265"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99eeeeee"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="视频帧率"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_video_fps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_15Hz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="15Hz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_30Hz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="30Hz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99eeeeee"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:text="视频码率"
+                    android:textColor="@color/recordtextclore"
+                    android:textSize="14sp" />
+
+                <SeekBar
+                    android:id="@+id/interact_brocast_setting_seek_video_code_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/interact_brocast_setting_seek_current_code_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200kbps"
+                        android:textColor="@color/radioclore"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/interact_brocast_setting_seek_max_code_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="1800kbps"
+                        android:textColor="#999999"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/interact_brocast_setting_check_code_rate_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:checked="false"
+                    android:text="启动码率自适应"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#99eeeeee"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="音频码率"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_audio_code_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_32kbps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="32kbps"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_48kbps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="48kbps"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_64kbps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="64kbps"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_128kbps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="128kbps"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99eeeeee"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="音频采样率"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_22_05KHz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="22.05KHz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_44_1KHz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="44.1KHz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_48KHz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="48KHz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#99eeeeee"></View>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#99eeeeee"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="嘉宾模式"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="该模式适用嘉宾"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="分辨率"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_resolution_ratio_guest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_360P_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="360P"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_480P_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="480P"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_640P_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="640P"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_720P_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="720P"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99eeeeee"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="编码方式"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_encode_type_guest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_H264_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="H.264"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_H265_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="H.265"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99eeeeee"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="视频帧率"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_video_fps_guest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_15Hz_guest_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="15Hz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_30Hz_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="30Hz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99eeeeee"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:text="视频码率"
+                    android:textColor="@color/recordtextclore"
+                    android:textSize="14sp" />
+
+                <SeekBar
+                    android:id="@+id/interact_brocast_setting_seek_video_code_rate_guest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/interact_brocast_setting_seek_current_code_rate_guest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200kbps"
+                        android:textColor="@color/radioclore"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/interact_brocast_setting_seek_max_code_rate_guest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="1800kbps"
+                        android:textColor="#999999"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/interact_brocast_setting_check_code_rate_auto_guest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:checked="false"
+                    android:text="启动码率自适应"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#99eeeeee"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="音频码率"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_audio_code_rate_guest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_32kbps_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="32kbps"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_48kbps_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="48kbps"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_64kbps_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="64kbps"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_128kbps_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="128kbps"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99eeeeee"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="音频采样率"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_sample_guest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_22_05KHz_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="22.05KHz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_44_1KHz_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="44.1KHz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_48KHz_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="48KHz"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#99eeeeee"></View>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#99eeeeee"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="观众模式"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="该模式适合观众"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="编码方式"
+                        android:textColor="@color/recordtextclore"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/interact_brocast_setting_encoder_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_soft_encoder_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="软解码"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/interact_brocast_setting_hard_encoder_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="硬解码"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#99eeeeee"></View>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/interact_brocast_setting_reset_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="重置"
+                android:textColor="#999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/interact_brocast_setting_confirm_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/radioclore">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

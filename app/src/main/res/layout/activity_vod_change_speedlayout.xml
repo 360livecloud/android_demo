@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="246dp"
+    android:layout_height="257dp"
+    android:orientation="vertical"
+    android:background="#CC000000">
+
+
+    <TextView
+        android:id="@+id/vod_speed_1.0"
+        android:layout_width="246dp"
+        android:layout_height="83dp"
+        android:text="1.0倍数"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/vod_speed_1.5"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:text="1.5倍数"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/vod_speed_2.0"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:text="2.0倍数"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+</LinearLayout>

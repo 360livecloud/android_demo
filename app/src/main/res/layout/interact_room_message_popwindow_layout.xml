@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="#99000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/interact_room_message_room_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="房间号:"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/interact_room_message_sdk_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="SDK版本号:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/interact_room_message_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="当前角色:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/interact_room_message_resolution_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="分辨率: "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/interact_room_message_code_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="视频码率:  0kbps"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/interact_room_message_fps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="视频帧率:  0fps"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/interact_room_message_audio_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="音频格式:  acc"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/interact_room_message_video_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="视频质量: "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/interact_room_message_net_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical|left"
+            android:text="网络类型:"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

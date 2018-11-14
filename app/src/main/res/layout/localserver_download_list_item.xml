@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:focusable="false"
+    android:minHeight="60dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/opt_layout">
+
+        <TextView
+            android:id="@+id/rid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="middle"
+            android:maxLines="1"
+            android:text="下载文件标题"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/rid"
+            android:layout_marginTop="5dp"
+            android:progressDrawable="@drawable/localserver_download_progress_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/speed"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="状态"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/total"
+                android:text="0 kb/s"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0 kb"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/opt_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/btn_download_pause" />
+
+        <ImageView
+            android:id="@+id/resume"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/btn_download_resume"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/wait"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/recorder_mirror"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btn_download_close" />
+
+    </LinearLayout>
+
+</RelativeLayout>

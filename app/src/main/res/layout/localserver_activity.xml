@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:background="@drawable/header_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/header_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scaleType="center"
+            android:src="@drawable/nav_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="视频列表"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/header_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+
+    <!--android:background="@color/white"-->
+    <ListView
+        android:id="@+id/vod_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#99eeeeee"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="6.6dp" />
+
+</LinearLayout>

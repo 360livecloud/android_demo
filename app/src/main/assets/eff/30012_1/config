@@ -1,0 +1,51 @@
+{
+"Name": "爱心花环",
+"ID": "30003_1",
+"Type": 1,
+"loop": 1,
+"music": "aaa.mp3",
+"texture": [
+{
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 1,
+"scale_Type": 0,
+"scale_ratio": 130,
+"anchor_offset_x": -153,
+"anchor_offset_y": -50,
+"asize_offset_x": 307,
+"asize_offset_y": 140,
+"mfaceCount": 1,
+"mframeCount": 31,
+"imageName": "saihong_"
+},
+{
+"mframeCount": 31,
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 0,
+"scale_Type": 0,
+"scale_ratio": 125,
+"anchor_offset_x": -175,
+"anchor_offset_y": -210,
+"asize_offset_x": 360,
+"asize_offset_y": 136,
+"mfaceCount": 1,
+"imageName": "huahuan_"
+},
+{
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 1,
+"scale_Type": 0,
+"scale_ratio": 130,
+"anchor_offset_x": -153,
+"anchor_offset_y": -70,
+"asize_offset_x": 307,
+"asize_offset_y": 140,
+"mfaceCount": 1,
+"mframeCount": 31,
+"imageName": "saihong_"
+}
+]
+}

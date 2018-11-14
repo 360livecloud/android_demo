@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tool:context="com.qihoo.videocloud.recorder.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:background="@drawable/header_bg">
+
+        <ImageView
+            android:id="@+id/record_setting_header_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/nav_back_selector"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="设置" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99eeeeee"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="分辨率"
+            android:textSize="14sp"
+            android:textColor="@color/recordtextclore" />
+
+        <RadioGroup
+            android:id="@+id/record_setting_resolution_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/record_setting_360P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="360P"
+                android:textSize="10sp"
+                android:textColor="#999999" />
+
+            <RadioButton
+                android:id="@+id/record_setting_480P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="480P"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_640P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="640P"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_720P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="720P"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99eeeeee"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="编码方式"
+            android:textSize="14sp"
+            android:textColor="@color/recordtextclore" />
+
+        <RadioGroup
+            android:id="@+id/record_setting_encode_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/record_setting_H264"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="H.264"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_H265"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="H.265"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99eeeeee"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="视频帧率"
+            android:textSize="14sp"
+            android:textColor="@color/recordtextclore" />
+
+        <RadioGroup
+            android:id="@+id/record_setting_video_fps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/record_setting_15Hz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="15Hz"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_30Hz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="30Hz"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99eeeeee"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:text="视频码率"
+        android:textSize="14sp"
+        android:textColor="@color/recordtextclore" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/record_setting_seek_video_code_rate" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/record_setting_seek_current_code_rate"
+            android:textSize="14sp"
+            android:textColor="@color/radioclore"
+            android:text="200kbps" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/record_setting_seek_max_code_rate"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:textColor="#999999"
+            android:text="1800kbps"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/record_setting_check_code_rate_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:checked="false"
+        android:text="启动码率自适应"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#99eeeeee"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="音频码率"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:textColor="@color/recordtextclore" />
+
+        <RadioGroup
+            android:id="@+id/record_setting_audio_code_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/record_setting_32kbps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="32kbps"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_48kbps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="48kbps"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_64kbps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="64kbps"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_128kbps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="128kbps"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99eeeeee"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="音频采样率"
+            android:textSize="14sp"
+            android:textColor="@color/recordtextclore" />
+
+        <RadioGroup
+            android:id="@+id/record_setting_sample"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/record_setting_22_05KHz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="22.05KHz"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_44_1KHz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="44.1KHz"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/record_setting_48KHz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="48KHz"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99eeeeee"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/record_setting_reset_layout"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="重置"
+                android:textColor="#999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/radioclore"
+            android:id="@+id/record_setting_confirm_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

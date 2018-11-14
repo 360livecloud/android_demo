@@ -1,0 +1,51 @@
+{
+"Name": "猫爪",
+"ID": "30004_1",
+"Type": 1,
+"loop": 1,
+"music": "aaa.mp3",
+"texture": [
+{
+"mframeCount": 50,
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 0,
+"scale_Type": 0,
+"scale_ratio": 73,
+"anchor_offset_x": -140,
+"anchor_offset_y": -140,
+"asize_offset_x": 280,
+"asize_offset_y": 99,
+"mfaceCount": 1,
+"imageName": "erduo_"
+},
+{
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 1,
+"scale_Type": 0,
+"scale_ratio": 100,
+"anchor_offset_x": -143,
+"anchor_offset_y": -83,
+"asize_offset_x": 280,
+"asize_offset_y": 138,
+"mfaceCount": 1,
+"mframeCount": 31,
+"imageName": "saihong_"
+},
+{
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 1,
+"scale_Type": 0,
+"scale_ratio": 70,
+"anchor_offset_x": -143,
+"anchor_offset_y": 70,
+"asize_offset_x": 268,
+"asize_offset_y": 180,
+"mfaceCount": 1,
+"mframeCount": 31,
+"imageName": "zhua_"
+}
+]
+}

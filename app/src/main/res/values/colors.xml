@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_666666">#666666</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_99ffffff">#99ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#288dff</color>
+    <color name="transparent">#00000000</color>
+    <color name="radioclore">#77c5ff</color>
+    <color name="recordtextclore">#333333</color>
+    <color name="statusbarclore">#84d0ff</color>
+
+    <!-- DialogBtnBackground -->
+    <color name="dialog_style_bg">#00000000</color>
+    <color name="dialog_item_color">#e8e8e8</color>
+    <color name="list_text_title">#323232</color>
+    <color name="list_text_content">#999999</color>
+    <color name="common_text_blue">#38B1C0</color>
+    <color name="common_red">#ff7640</color>
+
+    <color name="switch_bg_normal">#ffffff</color>
+    <color name="switch_bg_press">#14000000</color>
+
+    <color name="change_speed_textclour">#57B0F6</color>
+
+    <!-- ListVew按下颜色 -->
+    <color name="default_list_pressed">#f3f3f3</color>
+    <color name="default_list_normal">#FFFFFF</color>
+    <color name="actionbar_bg_color">#77c5ff</color>
+</resources>

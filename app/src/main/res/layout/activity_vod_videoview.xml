@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_player_container"
+        android:layout_width="match_parent"
+        android:layout_height="183.3dp"
+        android:background="@color/transparent">
+
+        <com.qihoo.videocloud.player.preview.QHVCVideoView
+            android:id="@+id/playView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <com.qihoo.videocloud.widget.ViewHeader
+            android:id="@+id/viewHeaderMine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navbar_height"
+            android:layout_gravity="top" />
+
+        <!--android:layout_marginTop="16dp"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="#bf000000"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.3dp"
+                android:padding="6dp"
+                android:src="@drawable/pause" />
+
+            <TextView
+                android:id="@+id/tv_play_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/btn_play"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <SeekBar
+                android:id="@+id/sb_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="11.3dp"
+                android:layout_toLeftOf="@+id/tv_duration"
+                android:layout_toRightOf="@+id/tv_play_time"
+                android:focusable="true"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/play_seekbar"
+                android:secondaryProgress="0"
+                android:thumb="@drawable/progress_point"
+                android:thumbOffset="0dip" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="29.3dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/resolution_ratio"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/resolution_ratio"
+                android:layout_height="match_parent"
+                android:layout_width="44.3dp"
+                android:gravity="center"
+                android:text="高清" />
+
+            <RelativeLayout
+                android:id="@+id/chang"
+                android:layout_width="44.3dp"
+                android:layout_height="44.6dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zoom_in" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/iv_zoom"
+                android:layout_width="44.3dp"
+                android:layout_height="44.6dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zoom_in" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_log"
+        android:layout_width="wrap_content"
+        android:layout_height="346.6dp"
+        android:layout_marginLeft="14.6dp"
+        android:layout_marginTop="198dp"
+        android:divider="@null"></ListView>
+</FrameLayout>
+
+

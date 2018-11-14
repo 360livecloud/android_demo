@@ -1,0 +1,51 @@
+﻿{
+"Name": "蕾丝头饰",
+"ID": "31036_2",
+"Type": 1,
+"loop": 1,
+"music": "aaa.mp3",
+"texture": [
+{
+"mframeCount": 30,
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 0,
+"scale_Type": 0,
+"scale_ratio": 75,
+"anchor_offset_x": -100,
+"anchor_offset_y": -160,
+"asize_offset_x": 200,
+"asize_offset_y": 106,
+"mfaceCount": 1,
+"imageName": "lsyz1_"
+},
+{
+"mframeCount": 1,
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 1,
+"scale_Type": 0,
+"scale_ratio": 65,
+"anchor_offset_x": -98,
+"anchor_offset_y": -70,
+"asize_offset_x": 196,
+"asize_offset_y": 73,
+"mfaceCount": 1,
+"imageName": "lsyz3_"
+},
+{
+"mframeCount": 30,
+"radius_Type": 0,
+"mradius": 0,
+"mid_Type": 0,
+"scale_Type": 0,
+"scale_ratio": 45,
+"anchor_offset_x": -44,
+"anchor_offset_y": 75,
+"asize_offset_x": 88,
+"asize_offset_y": 50,
+"mfaceCount": 1,
+"imageName": "lsyz2_"
+}
+]
+}

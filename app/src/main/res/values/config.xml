@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- !!! only user for QHVCSdkInit !!!-->
+    <!--调度url-->
+    <string name="config_url_schedule">http://g2.test.live.360.cn/</string>
+    <!--打点url-->
+    <string name="config_url_stat">http://t.qos.live.360.cn/</string>
+    <!-- merge -->
+    <string name="config_url_merge">http://101.198.148.136/meg.gif</string>
+    <!-- mic -->
+    <string name="config_url_mic">http://101.198.148.136/mic.gif</string>
+    <!--feedback url-->
+    <string name="config_url_feedback">http://101.198.148.136/fb.gif</string>
+    <!--云控url-->
+    <string name="config_url_control">http://sdk.test.live.360.cn/</string>
+
+    <!--用户id，用户唯一标识-->
+    <string name="config_uid">2599000</string>
+
+    <!--公共-->
+    <string name="config_bid"></string>
+
+    <!--推流-->
+    <string name="config_push_cid"></string>
+    <string name="config_push_sn"></string>
+
+    <!--美颜、FaceU-->
+    <string name="config_beauty_ak"></string>
+    <string name="config_beauty_sk"></string>
+
+    <!--播放-直播-->
+    <string name="config_player_live_cid"></string>
+    <string name="config_player_live_sn"></string>
+
+    <!--播放-点播-->
+    <string name="config_player_vod_cid"></string>
+    <string name="config_player_vod_url">http://static.s3.huajiao.com/Object.access/hj-video/NTg1NzY5ODgxNDgxNjM2MzM5OTUxMjcwNjg1MDUzNy5tcDQ=</string>
+
+    <!--上传-->
+    <string name="config_upload_cid"></string>
+    <string name="config_upload_ak"></string>
+    <string name="config_upload_sk"></string>
+    <string name="config_upload_bucket"></string>
+    <string name="config_upload_file"></string>
+
+    <!--录制-->
+    <string name="config_recorder_cid"></string>
+
+    <!--互动直播-->
+    <string name="config_interact_cid"></string>
+    <string name="config_interact_ak"></string>
+    <string name="config_interact_sk"></string>
+
+</resources>

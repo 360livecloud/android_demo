@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/record_message_sdk_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="SDK版本号:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_rtmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="推流地址:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_encoder_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="视频编码格式:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_encode_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="软硬解编码方式:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_resolution_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="实时分辨率: "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_code_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="实时码率:  0kbps"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_fps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="实时帧率:  0fps"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_video_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="视频堆积:  0"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_video_lost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="视频丢帧:  0"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_net_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="网络类型:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/record_message_transport_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:text="当前推流速度:  0KB/S"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

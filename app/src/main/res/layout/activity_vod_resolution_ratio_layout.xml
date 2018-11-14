@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="246dp"
+    android:layout_height="257dp"
+    android:orientation="vertical"
+    android:background="#CC000000">
+
+
+    <TextView
+        android:id="@+id/resoulution_1080p"
+        android:layout_width="246dp"
+        android:layout_height="64dp"
+        android:text="1080P"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/resoulution_720p"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="超清 720P"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/resoulution_480p"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="高清 480"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/resoulution_320p"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="标清 360"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+</LinearLayout>

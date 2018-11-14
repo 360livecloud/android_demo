@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_player_container"
+        android:layout_width="match_parent"
+        android:layout_height="183.3dp"
+        android:layout_gravity="top"
+        android:background="@color/transparent">
+
+        <com.qihoo.videocloud.player.preview.QHVCVideoView
+            android:id="@+id/playView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <com.qihoo.videocloud.widget.ViewHeader
+            android:id="@+id/viewHeaderMine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navbar_height"
+            android:layout_gravity="top" />
+
+        <!--android:layout_marginTop="16dp"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="#bf000000"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/iv_zoom"
+                android:layout_width="44.3dp"
+                android:layout_height="44.6dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zoom_in" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_log"
+        android:layout_width="wrap_content"
+        android:layout_height="346.6dp"
+        android:layout_marginLeft="14.6dp"
+        android:layout_marginTop="198dp"
+        android:divider="@null"></ListView>
+</FrameLayout>
+
+

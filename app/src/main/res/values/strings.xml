@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">360直播云</string>
+
+    <string name="str_sdk_ver"></string>
+
+    <!--common-->
+    <string name="str_common_setting">设置</string>
+
+    <!--main Activity-->
+    <string name="str_main_activity_subtitle">播放sdk</string>
+    <string name="str_main_activity_btn_live">直播播放器</string>
+    <string name="str_main_activity_btn_vod">点播播放器</string>
+
+    <!-- live vod config -->
+    <string name="str_config_no_play_address">无地址</string>
+    <string name="str_config_business_id">BusinessId业务标识</string>
+    <string name="str_config_channel_id">ChannelId渠道标识</string>
+    <string name="str_config_sn">sn 直播流标识</string>
+    <string name="str_config_source_list">直播流列表</string>
+    <string name="str_config_source_list_unflod">展开</string>
+    <string name="str_config_source_list_flod">折叠</string>
+    <string name="str_config_decoded_mode">解码方式</string>
+    <string name="str_config_decoded_auto">自动解码</string>
+    <string name="str_config_decoded_soft">软解码</string>
+    <string name="str_config_have_play_address">有地址</string>
+    <string name="str_config_start_play">开始播放</string>
+    <string name="str_config_whether_auto_play">是否自动播放:</string>
+    <string name="str_config_url">URL(播放地址):</string>
+
+    <!-- play video info -->
+    <string name="str_play_info_url">播放url:</string>
+    <string name="str_play_info_resolution">分辨率:</string>
+    <string name="str_play_info_bitrate">码率:</string>
+    <string name="str_play_info_frame_rate">帧率:</string>
+    <string name="str_play_info_audio_format">音频格式:</string>
+    <string name="str_play_info_audio_sampling_rate">音频采样率:</string>
+    <string name="str_play_info_audio_track">音频轨道:</string>
+    <string name="str_play_info_video_farmat">视频编码格式:</string>
+    <string name="str_play_info_download_sum">下行流量:</string>
+    <string name="str_play_info_already_play_time">已播时长:</string>
+    <string name="str_play_info_net_type">网络类型:</string>
+
+    <!-- beauty -->
+    <string name="str_beauty_beauty_authentication_success">美颜鉴权成功</string>
+    <string name="str_beauty_beauty_authentication_failed">美颜鉴权失败</string>
+    <string name="str_beauty_faceu_authentication_success">FaceU鉴权成功</string>
+    <string name="str_beauty_faceu_authentication_failed">FaceU鉴权失败</string>
+
+    <!-- upload -->
+    <string name="str_upload_ak">AK</string>
+    <string name="str_upload_sk">SK</string>
+    <string name="str_upload_bucket">Bucket 空间名称</string>
+    <string name="str_upload_file">File 上传文件路径</string>
+    <string name="str_upload_max_speed">最大上传速度</string>
+
+    <!--下载-->
+    <string name="str_download">下载</string>
+    <string name="str_download_add_success">添加到下载队列成功</string>
+    <string name="str_download_add_failed">添加到下载队列失败</string>
+    <string name="str_download_delete_content">确认要将所选下载任务移除吗？</string>
+    <string name="str_download_delete_checkout">同时删除文件</string>
+
+    <!-- 轰趴 -->
+    <string-array name="image_ids">
+        <item>@drawable/image_1</item>
+    </string-array>
+
+</resources>

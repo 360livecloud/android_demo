@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:keepScreenOn="true"
+    android:background="#2d2828"
+    tools:context="com.qihoo.videocloud.interactbrocast.InteractActivity">
+
+    <RelativeLayout
+        android:id="@+id/video_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2d2828">
+
+        <com.qihoo.videocloud.interactbrocast.ui.MyVideoView
+            android:id="@+id/big_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/interact_room_message_root_layout">
+
+        <TextView
+            android:id="@+id/interact_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/interact_room_name"
+            android:id="@+id/interact_room_message_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:minWidth="50dp"
+                android:maxWidth="170dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:id="@+id/interact_room_id" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/online_num"
+                android:drawablePadding="8dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:minWidth="50dp"
+                android:id="@+id/interact_room_online_num" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/recordicon"
+                android:id="@+id/interact_time"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="8dp"
+                android:minWidth="50dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:id="@+id/interact_button_layout"
+            android:layout_below="@+id/interact_room_message_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/interact_text_message_background"
+                android:text="房间信息"
+                android:padding="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/interact_room_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/interact_text_message_background"
+                android:text="嘉宾列表"
+                android:padding="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/interact_room_inviting_guests" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/interact_close"
+            android:id="@+id/interact_close_room"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp" />
+
+
+        <include
+            android:id="@+id/common_btn"
+            layout="@layout/common_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/interact_return_messagelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:visibility="gone"
+        android:src="@drawable/zoom_out" />
+</RelativeLayout>

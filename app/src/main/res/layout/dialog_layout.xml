@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_pop_bg"
+    android:layout_marginLeft="22dip"
+    android:layout_marginRight="22dip"
+    android:orientation="vertical">
+
+    <com.qihoo.videocloud.view.MarqueeTextView
+        android:background="@color/transparent"
+        android:id="@+id/dialogTitle"
+        style="@style/dialog_title_style"
+        android:layout_width="match_parent"
+        android:paddingRight="24dp"
+        android:layout_height="66dip"
+        android:paddingLeft="24dp"
+        android:textColor="@color/list_text_title"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/chooseDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialogMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="24dip"
+            android:paddingRight="24dp"
+            android:paddingBottom="22dip"
+            android:maxLines="10"
+            android:textColor="@color/list_text_title"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/chooseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/listDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+    </ScrollView>
+</LinearLayout>
